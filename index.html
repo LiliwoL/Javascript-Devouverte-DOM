@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Zoo Interactif</title>
+    <style>
+        .animal {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #333;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+        }
+        .animal img {
+            width: 150px;
+            height: 150px;
+            margin-top: 10px;
+        }
+        .selected {
+            border: 3px solid #ff0000;
+        }
+        #nourriture {
+            margin: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+        #infos {
+            margin: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+        .nourri{
+            background-color: #00ff00;
+        }
+    </style>
+</head>
+<body>
+<h1>Mon Zoo Interactif</h1>
+
+<div id="zoo">
+    <div class="animal" id="lion">
+        <img src="https://cdn-icons-png.flaticon.com/512/2938/2938995.png" alt="Lion">
+        <p>Lion</p>
+    </div>
+    <div class="animal" id="elephant">
+        <img src="https://cdn-icons-png.flaticon.com/512/2938/2938985.png" alt="Éléphant">
+        <p>Éléphant</p>
+    </div>
+    <div class="animal" id="girafe">
+        <img src="https://cdn-icons-png.flaticon.com/512/2938/2938989.png" alt="Girafe">
+        <p>Girafe</p>
+    </div>
+</div>
+
+<div id="nourriture">
+    <h2>Nourriture disponible : <span id="compteur">3</span></h2>
+    <button id="ajouterNourriture">Ajouter de la nourriture</button>
+</div>
+
+<div id="infos">
+    <h2>Informations</h2>
+    <p id="message">Cliquez sur un animal pour le nourrir !</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
